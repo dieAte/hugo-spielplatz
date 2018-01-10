@@ -1,6 +1,9 @@
 ---
-title: "Ananke: a Hugo Theme"
-featured_image: '/images/gohugo-default-sample-hero-image.jpg'
-description: "The last theme you'll ever need. Maybe."
+title: "Pedalpower"
+featured_image: '/images/header/header_tandem_01.jpg'
+description: "Tandem - Lastenrad - E-Bike"
 ---
-Welcome to my blog with some of my work in progress. I've been working on this book idea. You can read some of the chapters below.
+## Willkommen bei Pedalpower!
+
+Vorgestellt auf der Eurobike und demnächst erhältlich:
+Das X-Loader Cargobike mit Neigeradtechnik
