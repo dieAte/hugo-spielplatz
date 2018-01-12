@@ -1,13 +1,14 @@
 ---
-title: Contact
-description: We'd love to hear from you
+title: Kontakt
+description: Schreiben Sie uns!
 type: page
 menu:
-  main: {}
+  main:
+    weight: 1000
 
 ---
 
 
-This is an example of a custom shortcode that you can put right into your content. You will need to add a form action to the the shortcode to make it work. Check out [Formspree](https://formspree.io/) for a simple, free form service. 
+Schicken Sie uns ihre Fragen und Anregungen. Unser Supportteam wird sich um Sie kümmern.
 
 {{< form-contact action="https://example.com"  >}}

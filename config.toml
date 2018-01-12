@@ -1,11 +1,10 @@
 title = "Handmade in Berlin"
-baseURL = "https://example.com"
+baseURL = "https://pedalpower.de/"
 languageCode = "de-de"
 theme = "pedalpower"
 
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "de"
-SectionPagesMenu = "main"
 Paginate = 10 # this is set low for demonstrating with dummy content. Set to a higher number
 enableRobotsTXT = true
 
@@ -22,5 +21,5 @@ enableRobotsTXT = true
   youtube = "https://www.youtube.com/channel/UCV9hYQ5EAiNm7KTacjbmtBg/"
   # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
   background_color_class = "bg-black"
-  featured_image = "/images/header/header_tandem_01.jpg"
+  featured_image = "/images/header/01.jpg"
   recent_posts_number = 2
