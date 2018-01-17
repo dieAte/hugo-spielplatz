@@ -4,14 +4,32 @@
       {{ .Site.Title }}
     </a>
     <div class="flex-l items-center">
+      {{ $currentPage := . }}
       {{ if .Site.Menus.main }}
         <ul class="pl0 mr3">
           {{ range .Site.Menus.main }}
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ .Name }} page">
-              {{ .Name }}
+            {{ if .HasChildren }}
+
+            <li class="list f5 f4-ns fw4 dib pr3 nav-item dropdown {{if $currentPage.HasMenuCurrent "main" . }} active{{end}}">
+              <a class="hover-white white-90 nav-link dropdown-toggle{{if $currentPage.HasMenuCurrent "main" . }} underline {{end}}"
+                  href="{{ .URL }}" title="{{ .Name }} page" id="navbarDropdown" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ .Pre }}
+              <span>{{ .Name }}</span>
             </a>
-          </li>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              {{ range .Children }}
+              <a class="dropdown-item{{if $currentPage.IsMenuCurrent "main" . }} active{{end}}" href="{{.URL}}"> {{ .Name }}</a>
+              {{ end }}
+            </div>
+            {{else}}
+            <li class="list f5 f4-ns fw4 dib pr3 nav-item {{if $currentPage.HasMenuCurrent "main" . }} active{{end}}">
+              <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ .Name }} page">
+                {{ .Pre }}
+                <span>{{ .Name }}</span>
+              </a>
+            {{end}}
+            </li>
           {{ end }}
         </ul>
       {{ end }}
